@@ -1,0 +1,81 @@
+.container-01,
+.container-2,
+.container-3 {
+  max-width: 130rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  align-items: center;
+  column-gap: 6.4rem;
+}
+.image-phone img {
+  width: 55%;
+  padding: 3.4rem;
+}
+.step {
+  font-size: 8.4rem;
+  font-weight: 500;
+  color: #adb5bd;
+  margin-top: 1.2rem;
+}
+.heading-how,
+.secondary-heading {
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+  padding: 0 3.2rem;
+}
+.heading-how {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  margin-top: 3.2rem;
+  color: #cf711f;
+  margin-bottom: 2.4rem;
+}
+.secondary-heading {
+  font-size: 2.4rem;
+}
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+.description-step {
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+.image-phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+/*circle behind app img*/
+.image-phone::before {
+  content: "";
+  display: block;
+  width: 60%;
+  /* height: 100px;*/
+  padding-bottom: 60%;
+  background-color: #fdf2e9;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /*translate property will shift element*/
+  border-radius: 50%;
+  z-index: -2; /*for putting one element behind another*/
+}
+.image-phone::after {
+  content: "";
+  display: block;
+  width: 50%;
+  padding-bottom: 50%;
+  z-index: -1;
+  background-color: #fae5d3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}

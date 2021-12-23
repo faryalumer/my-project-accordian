@@ -1,0 +1,198 @@
+/*rem and em donot depend on font-size of html in media queries
+irem=iem=16*/
+
+/*1344 px==1344/16*/
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120em;
+  }
+  .heading-primary {
+    font-size: 3.6em;
+  }
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/*for tablet for below 1200px 1200px/16=75em*/
+@media (max-width: 75em) {
+  html {
+    /*9/16=56.25%*/
+    font-size: 56.25%;
+  }
+  .testimonial.container {
+    padding: 3.4rem;
+  }
+}
+/*940px*/
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .hero-img {
+    width: 60%;
+  }
+  .hero-img-box {
+    text-align: center;
+  }
+  .meals-delivered {
+    justify-content: center;
+  }
+  .container-08 {
+    max-width: 95rem;
+  }
+}
+@media (max-width: 44em) {
+  .main-nav {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-out;
+    transform: translateX(100%);
+    /*cool effect to slide it from side slide horizontly by its own width go to main style to body and html overflowx hidden*/
+
+    /*hide it visually..means invisible use 20% to bare visible*/
+    opacity: 0;
+
+    /*make it unaccessable for keyboard and mouse*/
+    pointer-events: none;
+
+    /*hide it from screen reader*/
+    visibility: visible;
+  }
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4.8rem;
+  }
+  .nav-1 {
+    font-size: 3rem;
+    font-family: inherit;
+    font-weight: 400;
+  }
+  .btn-mobile-nav {
+    display: block;
+  }
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+  .recipes {
+    font-size: 4.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 3.2rem;
+    margin-bottom: 3.2rem;
+    padding: 2.6rem;
+  }
+  .diets {
+    grid-column: 1/-1;
+    margin-top: 4.4rem;
+    padding: 2.4rem;
+    justify-self: center;
+    align-items: center;
+  }
+  .container-09 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .nav-col {
+    grid-row: 1;
+  }
+  .address {
+    grid-column: span 2/4;
+    justify-self: center;
+  }
+}
+@media (max-width: 24em) {
+  .container-01 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .container-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .text-side {
+    grid-row: 1;
+  }
+  .container-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .meal-choices {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .testimonial-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .testimonials {
+    padding: 2.4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .testimonial {
+    grid-template-columns: 1fr;
+  }
+  .boxes {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2.4rem;
+  }
+  .container-07 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .cta-text-box {
+    padding: 0;
+    grid-column: span 1/2;
+  }
+  .container-08 {
+    margin: 0 auto;
+    padding: 3.4rem;
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column: span 1/2;
+  }
+  .footer {
+    padding-top: 5rem;
+  }
+  .call-to-action {
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+  }
+  .cta-form {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    display: none;
+  }
+}

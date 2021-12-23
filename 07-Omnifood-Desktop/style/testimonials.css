@@ -1,0 +1,112 @@
+.testimonials {
+  display: grid;
+  grid-template-columns: 50fr 50fr;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+  width: 100%;
+}
+.testimonial-img {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+  margin-top: 1.2rem;
+}
+.testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+}
+.customer-name {
+  font-size: 1.6rem;
+  color: #777;
+}
+/*.gallery-items img {
+  display: block;
+  /*for removing white lines between images
+  width: 100%;
+  transition: all 0, 4s;
+}*/
+/*.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+}*/
+
+.customer {
+  font-size: 4rem;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-top: 6.7rem;
+  margin-bottom: 6.7rem;
+  color: #333;
+}
+.gallery-items img:hover {
+  transform: scale(1.1);
+}
+.gallery-items {
+  overflow: hidden;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+  padding-top: 4.5rem;
+  width: 100%;
+}
+.gallery-items1 img {
+  height: 20rem;
+  border: 10px solid white;
+}
+.gallery-items2 img {
+  height: 20rem;
+  border: 10px solid white;
+}
+.gallery-items3 img {
+  height: 20rem;
+  border: 10px solid white;
+}
+.gallery-items4 img {
+  height: 20rem;
+  border: 10px solid white;
+}
+.gallery-items5 img {
+  height: 20rem;
+  border: 10px solid white;
+}
+.gallery-items6 img {
+  height: 20rem;
+  border: 10px solid white;
+}
+.gallery-items7 img {
+  height: 20rem;
+  border: 10px solid white;
+}
+.gallery-items8 img {
+  height: 20rem;
+  border: 10px solid white;
+}
+.gallery-items9 img {
+  height: 20rem;
+  border: 10px solid white;
+}
+.gallery-items10 img {
+  height: 20rem;
+  border: 10px solid white;
+}
+.gallery-items11 img {
+  height: 20rem;
+  border: 10px solid white;
+}
+.gallery-items12 img {
+  height: 20rem;
+  border: 10px solid white;
+}
+.testimonial-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #fdf2e9;
+  align-items: center;
+  padding: 5.4rem;
+  gap: 3.8rem;
+}

@@ -1,0 +1,57 @@
+*  .test {
+  background-color: red;
+   width: 1000px;
+  padding: 100px;
+  max-width: 1000px;
+max-width:500rem
+
+by default 1rem=16px
+
+html{
+  font-size:10px;
+  10/16 =0.625=62.5
+  font-size:62.5(after writing it in percentage then use rem as a unit for 
+  every element then it will automatically adjust as per the site hirerachy
+
+}
+*/
+.hero-image {
+  width: 100%;
+}
+divide the box into two grid
+then make image grid 100percent
+which will be the half of parent elemnt
+
+--for making the selection-hero elemnt center make margin 0 auto
+
+
+---transition of the button:
+
+transition :all or background only ,time(always use in link visited state)
+
+-----pading can also work for example if we drag the view port shorten 
+then content can be glued to the sides
+
+but with padding viewport like tabs it will not stick to the corner
+
+
+----flex
+by default flex items have stretch so we ve to align-item center
+
+ionics :
+<script> src="http://unpkg.com/ionicons@5.5.1/dist/ionicons.js></script>
+
+basic usage :
+to use built-in-icon from the ionicons package populate 
+"name " attribute on the ion-icon component:
+
+<ion-icon name="heart"></ion-icon>
+
+if that version doesnt work use 5.4.0
+
+----overflow hidden property
+
+while making card in the page the image usually overlap
+on the border radius property of the card
+to make it not over flow and make the image round too
+we use overfloe property hidden
